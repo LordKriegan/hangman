@@ -50,6 +50,7 @@ function guessLet() {
                 guessWord.guesses--;
                 console.log(hangmanVisual[guessWord.guesses]);
                 if (guessWord.guesses <= 0) {//if out of guesses start over
+                    console.log(guessWord.realWord);
                     console.log("Game over!");
                     startGame();
                 } else {
